@@ -14,8 +14,8 @@ namespace NegosudAPI.Models
         {
         }
         public DbSet<Clients> TodoItems { get; set; }
-        public DbSet<NegosudAPI.Models.Articles> Articles { get; set; }
-        public DbSet<NegosudAPI.Models.Familles> Familles { get; set; }
-        public DbSet<NegosudAPI.Models.Fournisseurs> Fournisseurs { get; set; }
+        public DbSet<Articles> Articles { get; set; }
+        public DbSet<Familles> Familles { get; set; }
+        public DbSet<Fournisseurs> Fournisseurs { get; set; }
     }
 }

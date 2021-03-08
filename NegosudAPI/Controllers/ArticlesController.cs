@@ -9,7 +9,7 @@ using NegosudAPI.Models;
 
 namespace NegosudAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/Articles")]
     [ApiController]
     public class ArticlesController : ControllerBase
     {
@@ -80,7 +80,7 @@ namespace NegosudAPI.Controllers
             _context.Articles.Add(articles);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetArticles", new { id = articles.Id }, articles);
+            return CreatedAtAction(nameof(GetArticles), new { id = articles.Id }, articles);
         }
 
         // DELETE: api/Articles/5
