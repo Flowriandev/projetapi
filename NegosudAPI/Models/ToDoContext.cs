@@ -12,6 +12,6 @@ namespace NegosudAPI.Models
             : base(options)
         {
         }
-        public DbSet<ToDoItem> TodoItems { get; set; }
+        public DbSet<Clients> TodoItems { get; set; }
     }
 }
