@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NegosudAPI", "NegosudAPI\NegosudAPI.csproj", "{D5FF2F3E-8962-4161-A3AD-BE694F12F3F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "website", "website\website.csproj", "{538E85AA-E55C-484B-953F-BF6A22A51C9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "website", "website\website.csproj", "{538E85AA-E55C-484B-953F-BF6A22A51C9D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

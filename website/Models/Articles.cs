@@ -7,7 +7,7 @@ namespace website.Models
 {
     public class Articles
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
         public string Nom { get; set; }
         public string Description { get; set; }
         public string Famille { get; set; }
