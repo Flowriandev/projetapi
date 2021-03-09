@@ -31,6 +31,7 @@ namespace NegoApp
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Nouveau_client = new System.Windows.Forms.Button();
             this.Modifier = new System.Windows.Forms.DataGridViewButtonColumn();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -39,7 +40,7 @@ namespace NegoApp
             this.CP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nouveau_client = new System.Windows.Forms.Button();
+            this.Pays = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,13 +56,23 @@ namespace NegoApp
             this.Adresse,
             this.CP,
             this.Tel,
-            this.dataGridViewTextBoxColumn1});
+            this.dataGridViewTextBoxColumn1,
+            this.Pays});
             this.dataGridView1.Location = new System.Drawing.Point(13, 13);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(607, 425);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // Nouveau_client
+            // 
+            this.Nouveau_client.Location = new System.Drawing.Point(636, 95);
+            this.Nouveau_client.Name = "Nouveau_client";
+            this.Nouveau_client.Size = new System.Drawing.Size(138, 50);
+            this.Nouveau_client.TabIndex = 1;
+            this.Nouveau_client.Text = "Nouveau Client";
+            this.Nouveau_client.UseVisualStyleBackColor = true;
             // 
             // Modifier
             // 
@@ -109,14 +120,10 @@ namespace NegoApp
             this.dataGridViewTextBoxColumn1.HeaderText = "Code Postal";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
-            // Nouveau_client
+            // Pays
             // 
-            this.Nouveau_client.Location = new System.Drawing.Point(636, 95);
-            this.Nouveau_client.Name = "Nouveau_client";
-            this.Nouveau_client.Size = new System.Drawing.Size(138, 50);
-            this.Nouveau_client.TabIndex = 1;
-            this.Nouveau_client.Text = "Nouveau Client";
-            this.Nouveau_client.UseVisualStyleBackColor = true;
+            this.Pays.HeaderText = "Pays";
+            this.Pays.Name = "Pays";
             // 
             // Clients
             // 
@@ -136,6 +143,7 @@ namespace NegoApp
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button Nouveau_client;
         private System.Windows.Forms.DataGridViewButtonColumn Modifier;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nom;
@@ -144,6 +152,6 @@ namespace NegoApp
         private System.Windows.Forms.DataGridViewTextBoxColumn CP;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tel;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.Button Nouveau_client;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Pays;
     }
 }
