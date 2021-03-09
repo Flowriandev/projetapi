@@ -88,7 +88,7 @@ namespace NegoApp
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(237, 202);
+            this.button2.Location = new System.Drawing.Point(237, 193);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(119, 49);
             this.button2.TabIndex = 1;
@@ -106,7 +106,7 @@ namespace NegoApp
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(474, 202);
+            this.button8.Location = new System.Drawing.Point(474, 193);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(119, 49);
             this.button8.TabIndex = 3;

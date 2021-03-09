@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace NegoApp
 {
-    public partial class Accueil : Form
+    public partial class Articles : Form
     {
-        public Accueil()
+        public Articles()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
