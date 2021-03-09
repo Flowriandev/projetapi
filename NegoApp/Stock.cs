@@ -16,5 +16,10 @@ namespace NegoApp
         {
             InitializeComponent();
         }
+
+        private void Stock_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

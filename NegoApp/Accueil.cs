@@ -12,6 +12,8 @@ namespace NegoApp
 {
     public partial class Accueil : Form
     {
+
+        Stock stockForm = new Stock();
         public Accueil()
         {
             InitializeComponent();
@@ -20,6 +22,11 @@ namespace NegoApp
         private void Accueil_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_stock_Click(object sender, EventArgs e)
+        {
+            stockForm.Show();
         }
     }
 }

@@ -35,7 +35,7 @@ namespace NegoApp
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btn_stock = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
@@ -95,14 +95,15 @@ namespace NegoApp
             this.button2.Text = "Fournisseurs";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btn_stock
             // 
-            this.button7.Location = new System.Drawing.Point(474, 82);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(119, 49);
-            this.button7.TabIndex = 2;
-            this.button7.Text = "Stock";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btn_stock.Location = new System.Drawing.Point(474, 82);
+            this.btn_stock.Name = "btn_stock";
+            this.btn_stock.Size = new System.Drawing.Size(119, 49);
+            this.btn_stock.TabIndex = 2;
+            this.btn_stock.Text = "Stock";
+            this.btn_stock.UseVisualStyleBackColor = true;
+            this.btn_stock.Click += new System.EventHandler(this.btn_stock_Click);
             // 
             // button8
             // 
@@ -139,12 +140,11 @@ namespace NegoApp
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
+            this.Controls.Add(this.btn_stock);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Accueil";
             this.Text = "Accueil";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
@@ -157,7 +157,7 @@ namespace NegoApp
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btn_stock;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
