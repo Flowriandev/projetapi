@@ -33,9 +33,11 @@ namespace NegoApp
             this.btn_stock_list = new System.Windows.Forms.Button();
             this.pnl_btn = new System.Windows.Forms.Panel();
             this.pnl_stock_list = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.btn_back1 = new System.Windows.Forms.Button();
             this.pnl_cmd = new System.Windows.Forms.Panel();
+            this.btn_back = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.pnl_btn.SuspendLayout();
             this.pnl_stock_list.SuspendLayout();
             this.pnl_cmd.SuspendLayout();
@@ -72,28 +74,41 @@ namespace NegoApp
             // 
             // pnl_stock_list
             // 
+            this.pnl_stock_list.Controls.Add(this.btn_back1);
             this.pnl_stock_list.Controls.Add(this.label1);
             this.pnl_stock_list.Location = new System.Drawing.Point(0, 0);
             this.pnl_stock_list.Name = "pnl_stock_list";
             this.pnl_stock_list.Size = new System.Drawing.Size(788, 438);
             this.pnl_stock_list.TabIndex = 6;
             // 
-            // label1
+            // btn_back1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(380, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Stocks";
+            this.btn_back1.Location = new System.Drawing.Point(12, 415);
+            this.btn_back1.Name = "btn_back1";
+            this.btn_back1.Size = new System.Drawing.Size(75, 23);
+            this.btn_back1.TabIndex = 8;
+            this.btn_back1.Text = "Retour";
+            this.btn_back1.UseVisualStyleBackColor = true;
+            this.btn_back1.Click += new System.EventHandler(this.btn_back1_Click);
             // 
             // pnl_cmd
             // 
+            this.pnl_cmd.Controls.Add(this.btn_back);
             this.pnl_cmd.Controls.Add(this.label2);
-            this.pnl_cmd.Location = new System.Drawing.Point(0, 0);
+            this.pnl_cmd.Location = new System.Drawing.Point(0, 2);
             this.pnl_cmd.Name = "pnl_cmd";
             this.pnl_cmd.Size = new System.Drawing.Size(788, 456);
             this.pnl_cmd.TabIndex = 7;
+            // 
+            // btn_back
+            // 
+            this.btn_back.Location = new System.Drawing.Point(12, 415);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(75, 23);
+            this.btn_back.TabIndex = 1;
+            this.btn_back.Text = "Retour";
+            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // label2
             // 
@@ -104,13 +119,22 @@ namespace NegoApp
             this.label2.TabIndex = 0;
             this.label2.Text = "Passer commande";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(380, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 15);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Stocks";
+            // 
             // Stock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pnl_cmd);
             this.Controls.Add(this.pnl_stock_list);
+            this.Controls.Add(this.pnl_cmd);
             this.Controls.Add(this.pnl_btn);
             this.Name = "Stock";
             this.Text = "Stock";
@@ -133,5 +157,7 @@ namespace NegoApp
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel pnl_cmd;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btn_back;
+        private System.Windows.Forms.Button btn_back1;
     }
 }

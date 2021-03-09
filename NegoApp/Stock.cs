@@ -36,5 +36,16 @@ namespace NegoApp
             pnl_cmd.Visible = true;
         }
 
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            pnl_cmd.Visible = false;
+            pnl_btn.Visible = true;
+        }
+
+        private void btn_back1_Click(object sender, EventArgs e)
+        {
+            pnl_stock_list.Visible = false;
+            pnl_btn.Visible = true;
+        }
     }
 }
