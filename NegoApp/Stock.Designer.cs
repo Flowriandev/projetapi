@@ -33,11 +33,12 @@ namespace NegoApp
             this.btn_stock_list = new System.Windows.Forms.Button();
             this.pnl_btn = new System.Windows.Forms.Panel();
             this.pnl_stock_list = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.btn_back1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.pnl_cmd = new System.Windows.Forms.Panel();
             this.btn_back = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.pnl_btn.SuspendLayout();
             this.pnl_stock_list.SuspendLayout();
             this.pnl_cmd.SuspendLayout();
@@ -74,12 +75,23 @@ namespace NegoApp
             // 
             // pnl_stock_list
             // 
+            this.pnl_stock_list.Controls.Add(this.button1);
             this.pnl_stock_list.Controls.Add(this.btn_back1);
             this.pnl_stock_list.Controls.Add(this.label1);
             this.pnl_stock_list.Location = new System.Drawing.Point(0, 0);
             this.pnl_stock_list.Name = "pnl_stock_list";
             this.pnl_stock_list.Size = new System.Drawing.Size(788, 438);
             this.pnl_stock_list.TabIndex = 6;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(368, 29);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Get data";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_ClickAsync);
             // 
             // btn_back1
             // 
@@ -90,6 +102,15 @@ namespace NegoApp
             this.btn_back1.Text = "Retour";
             this.btn_back1.UseVisualStyleBackColor = true;
             this.btn_back1.Click += new System.EventHandler(this.btn_back1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(380, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 15);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Stocks";
             // 
             // pnl_cmd
             // 
@@ -118,15 +139,6 @@ namespace NegoApp
             this.label2.Size = new System.Drawing.Size(104, 15);
             this.label2.TabIndex = 0;
             this.label2.Text = "Passer commande";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(380, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Stocks";
             // 
             // Stock
             // 
@@ -159,5 +171,6 @@ namespace NegoApp
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btn_back;
         private System.Windows.Forms.Button btn_back1;
+        private System.Windows.Forms.Button button1;
     }
 }
