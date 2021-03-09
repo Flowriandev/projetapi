@@ -57,8 +57,5 @@ namespace NegoApp
             pnl_btn.Visible = true;
         }
 
-        private async Task button1_ClickAsync(object sender, EventArgs e)
-        {
-        }
     }
 }
