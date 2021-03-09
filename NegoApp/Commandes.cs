@@ -16,5 +16,10 @@ namespace NegoApp
         {
             InitializeComponent();
         }
+
+        private void Commandes_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
