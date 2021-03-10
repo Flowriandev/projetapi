@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace website.Models
 {
-    public class Articles
+    public class ArticlesDTO
     {
         public int Id { get; set; }
         public string Nom { get; set; }
@@ -14,6 +14,5 @@ namespace website.Models
         public string Annee { get; set; }
         public double Prix { get; set; }
         public int Stock { get; set; }
-
     }
 }

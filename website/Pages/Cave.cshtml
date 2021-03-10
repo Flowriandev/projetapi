@@ -1,34 +1,90 @@
 ﻿@page
-@model Models.Articles
+@model website.Models.ArticleViewModels
 @{
     ViewData["Title"] = "Produits";
 }
 
 
-<div>
-    <h4>Cave</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Id)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Nom)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Famille)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Annee)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.stock)
-        </dd>
-    </dl>
-</div>
+@*<div>
+        <h1>cave</h1>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @html.displaynamefor(model => model.id)
+            </dt>
+            <dd class="col-sm-10">
+                @html.displayfor(model => model.nom)
+            </dd>
+            <dt class="col-sm-2">
+                @html.displaynamefor(model => model.famille)
+            </dt>
+            <dd class="col-sm-10">
+                @html.displayfor(model => model.annee)
+            </dd>
+            <dt class="col-sm-2">
+                @html.displaynamefor(model => model.description)
+            </dt>
+            <dd class="col-sm-10">
+                @html.displayfor(model => model.stock)
+            </dd>
+        </dl>
+    </div>*@
 <div>
     <a asp-page="/Index">Retour à l'accueil </a>
 </div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Articles[0].Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Articles[0].Nom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Articles[0].Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Articles[0].Famille)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Articles[0].Annee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Articles[0].Prix)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Articles[0].Stock)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Articles)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Famille)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Annee)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Prix)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Stock)
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
