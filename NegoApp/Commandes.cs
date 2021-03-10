@@ -21,5 +21,10 @@ namespace NegoApp
         {
 
         }
+
+        private void new_order_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

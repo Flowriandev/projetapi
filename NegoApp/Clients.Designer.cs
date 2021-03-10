@@ -29,9 +29,10 @@ namespace NegoApp
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Nouveau_client = new System.Windows.Forms.Button();
+            this.BackAccueil = new System.Windows.Forms.PictureBox();
             this.Modifier = new System.Windows.Forms.DataGridViewButtonColumn();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,7 +42,6 @@ namespace NegoApp
             this.Tel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Pays = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BackAccueil = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BackAccueil)).BeginInit();
             this.SuspendLayout();
@@ -76,15 +76,24 @@ namespace NegoApp
             this.Nouveau_client.Text = "Nouveau Client";
             this.Nouveau_client.UseVisualStyleBackColor = true;
             // 
+            // BackAccueil
+            // 
+            this.BackAccueil.Image = global::NegoApp.Properties.Resources.home_large;
+            this.BackAccueil.Location = new System.Drawing.Point(668, 31);
+            this.BackAccueil.Name = "BackAccueil";
+            this.BackAccueil.Size = new System.Drawing.Size(49, 53);
+            this.BackAccueil.TabIndex = 2;
+            this.BackAccueil.TabStop = false;
+            // 
             // Modifier
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Gray;
-            this.Modifier.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            this.Modifier.DefaultCellStyle = dataGridViewCellStyle2;
             this.Modifier.HeaderText = "";
             this.Modifier.Name = "Modifier";
-            this.Modifier.Width = 20;
+            this.Modifier.Width = 25;
             // 
             // ID
             // 
@@ -127,15 +136,6 @@ namespace NegoApp
             this.Pays.HeaderText = "Pays";
             this.Pays.Name = "Pays";
             // 
-            // BackAccueil
-            // 
-            this.BackAccueil.Image = global::NegoApp.Properties.Resources.home_large;
-            this.BackAccueil.Location = new System.Drawing.Point(668, 31);
-            this.BackAccueil.Name = "BackAccueil";
-            this.BackAccueil.Size = new System.Drawing.Size(49, 53);
-            this.BackAccueil.TabIndex = 2;
-            this.BackAccueil.TabStop = false;
-            // 
             // Clients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -157,6 +157,7 @@ namespace NegoApp
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button Nouveau_client;
+        private System.Windows.Forms.PictureBox BackAccueil;
         private System.Windows.Forms.DataGridViewButtonColumn Modifier;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nom;
@@ -166,6 +167,5 @@ namespace NegoApp
         private System.Windows.Forms.DataGridViewTextBoxColumn Tel;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Pays;
-        private System.Windows.Forms.PictureBox BackAccueil;
     }
 }

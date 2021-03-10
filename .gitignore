@@ -338,3 +338,6 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+/NegosudAPI/Migrations/ToDoContextModelSnapshot.cs
+/NegosudAPI/Migrations/20210310103826_maj.Designer.cs
+/NegosudAPI/Migrations/20210310103826_maj.cs

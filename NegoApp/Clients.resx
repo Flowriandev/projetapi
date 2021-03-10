@@ -81,4 +81,28 @@
   <metadata name="Pays.UserAddedColumn" type="System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
   </metadata>
+  <metadata name="Modifier.UserAddedColumn" type="System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>True</value>
+  </metadata>
+  <metadata name="ID.UserAddedColumn" type="System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>True</value>
+  </metadata>
+  <metadata name="Nom.UserAddedColumn" type="System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>True</value>
+  </metadata>
+  <metadata name="Prénom.UserAddedColumn" type="System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>True</value>
+  </metadata>
+  <metadata name="Adresse.UserAddedColumn" type="System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>True</value>
+  </metadata>
+  <metadata name="CP.UserAddedColumn" type="System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>True</value>
+  </metadata>
+  <metadata name="Tel.UserAddedColumn" type="System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>True</value>
+  </metadata>
+  <metadata name="Pays.UserAddedColumn" type="System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>True</value>
+  </metadata>
 </root>
