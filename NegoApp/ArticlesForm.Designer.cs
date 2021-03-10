@@ -1,7 +1,7 @@
 ﻿
 namespace NegoApp
 {
-    partial class Articles
+    partial class ArticlesForm
     {
         /// <summary>
         /// Required designer variable.

@@ -13,7 +13,7 @@ namespace NegoApp
     public partial class Accueil : Form
     {
 
-        Stock stockForm = new Stock();
+        StockForm stockForm = new StockForm();
         public Accueil()
         {
             InitializeComponent();
