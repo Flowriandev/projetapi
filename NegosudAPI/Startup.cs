@@ -28,8 +28,8 @@ namespace NegosudAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ToDoContext>(opt =>
-                                               opt.UseInMemoryDatabase("NegosudDB"));
+            services.AddDbContext<ToDoContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("NegosudDB")));
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
