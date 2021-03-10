@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace NegoApp
 {
-    public partial class Articles : Form
+    public partial class ArticlesForm : Form
     {
-        public Articles()
+        public ArticlesForm()
         {
             InitializeComponent();
         }

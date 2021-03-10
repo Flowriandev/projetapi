@@ -12,11 +12,11 @@ using System.Windows.Forms;
 
 namespace NegoApp
 {
-    public partial class Stock : Form
+    public partial class StockForm : Form
     {
         static HttpClient client = new HttpClient();
 
-        public Stock()
+        public StockForm()
         {
             InitializeComponent();
             client.BaseAddress = new Uri("http://localhost:44384/api/");
@@ -55,6 +55,22 @@ namespace NegoApp
         {
             pnl_stock_list.Visible = false;
             pnl_btn.Visible = true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = GetProductAsync("articles");
+        }
+
+        static async Task<ArticleClass> GetProductAsync(string path)
+        {
+            ArticleClass product = null;
+            HttpResponseMessage response = await client.GetAsync(path);
+            if (response.IsSuccessStatusCode)
+            {
+                product = await response.Content.ReadAsAsync<ArticleClass>();
+            }
+            return product;
         }
 
     }

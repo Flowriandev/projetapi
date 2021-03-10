@@ -1,7 +1,7 @@
 ﻿
 namespace NegoApp
 {
-    partial class Stock
+    partial class StockForm
     {
         /// <summary>
         /// Required designer variable.
@@ -33,14 +33,21 @@ namespace NegoApp
             this.btn_stock_list = new System.Windows.Forms.Button();
             this.pnl_btn = new System.Windows.Forms.Panel();
             this.pnl_stock_list = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.btn_back1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pnl_cmd = new System.Windows.Forms.Panel();
             this.btn_back = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.Nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Famille = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Année = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Prix = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnl_btn.SuspendLayout();
             this.pnl_stock_list.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.pnl_cmd.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,6 +82,7 @@ namespace NegoApp
             // 
             // pnl_stock_list
             // 
+            this.pnl_stock_list.Controls.Add(this.dataGridView1);
             this.pnl_stock_list.Controls.Add(this.button1);
             this.pnl_stock_list.Controls.Add(this.btn_back1);
             this.pnl_stock_list.Controls.Add(this.label1);
@@ -82,6 +90,21 @@ namespace NegoApp
             this.pnl_stock_list.Name = "pnl_stock_list";
             this.pnl_stock_list.Size = new System.Drawing.Size(788, 438);
             this.pnl_stock_list.TabIndex = 6;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Nom,
+            this.Description,
+            this.Famille,
+            this.Année,
+            this.Prix});
+            this.dataGridView1.Location = new System.Drawing.Point(12, 67);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(776, 344);
+            this.dataGridView1.TabIndex = 10;
             // 
             // button1
             // 
@@ -91,6 +114,7 @@ namespace NegoApp
             this.button1.TabIndex = 9;
             this.button1.Text = "Get data";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btn_back1
             // 
@@ -139,7 +163,32 @@ namespace NegoApp
             this.label2.TabIndex = 0;
             this.label2.Text = "Passer commande";
             // 
-            // Stock
+            // Nom
+            // 
+            this.Nom.HeaderText = "Nom";
+            this.Nom.Name = "Nom";
+            // 
+            // Description
+            // 
+            this.Description.HeaderText = "Description";
+            this.Description.Name = "Description";
+            // 
+            // Famille
+            // 
+            this.Famille.HeaderText = "Famille";
+            this.Famille.Name = "Famille";
+            // 
+            // Année
+            // 
+            this.Année.HeaderText = "Année";
+            this.Année.Name = "Année";
+            // 
+            // Prix
+            // 
+            this.Prix.HeaderText = "Prix";
+            this.Prix.Name = "Prix";
+            // 
+            // StockForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -147,12 +196,13 @@ namespace NegoApp
             this.Controls.Add(this.pnl_stock_list);
             this.Controls.Add(this.pnl_cmd);
             this.Controls.Add(this.pnl_btn);
-            this.Name = "Stock";
+            this.Name = "StockForm";
             this.Text = "Stock";
             this.Load += new System.EventHandler(this.Stock_Load);
             this.pnl_btn.ResumeLayout(false);
             this.pnl_stock_list.ResumeLayout(false);
             this.pnl_stock_list.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.pnl_cmd.ResumeLayout(false);
             this.pnl_cmd.PerformLayout();
             this.ResumeLayout(false);
@@ -171,5 +221,11 @@ namespace NegoApp
         private System.Windows.Forms.Button btn_back;
         private System.Windows.Forms.Button btn_back1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nom;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Description;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Famille;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Année;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Prix;
     }
 }
