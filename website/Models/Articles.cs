@@ -13,7 +13,6 @@ namespace website.Models
         public string Famille { get; set; }
         public string Annee { get; set; }
         public double Prix { get; set; }
-        public int Stock { get; set; }
 
     }
 }
