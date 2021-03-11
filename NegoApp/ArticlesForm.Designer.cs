@@ -107,7 +107,7 @@ namespace NegoApp
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // Articles
+            // ArticlesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -115,7 +115,7 @@ namespace NegoApp
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.NvArticle);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "Articles";
+            this.Name = "ArticlesForm";
             this.Text = "Articles";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
