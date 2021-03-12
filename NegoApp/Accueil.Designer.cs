@@ -48,7 +48,7 @@ namespace NegoApp
             this.BtnClient.TabIndex = 0;
             this.BtnClient.Text = "Clients";
             this.BtnClient.UseVisualStyleBackColor = true;
-            this.BtnClient.Click += new System.EventHandler(this.button1_Click);
+            this.BtnClient.Click += new System.EventHandler(this.BtnClient_Click);
             // 
             // button3
             // 
