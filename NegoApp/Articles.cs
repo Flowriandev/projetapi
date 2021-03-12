@@ -37,20 +37,11 @@ namespace NegoApp
                         {
                             String json = await content.ReadAsStringAsync();
                             JArray j = JArray.Parse(json);
-                            List<Articles> elements = new List<Articles>();
-                            foreach (var elem in j)
-                            {
-                                elements.Add(new Articles()
-                                {
-                                    ID = (long)elem["id"],
-                                    Nom = (string)elem["nom"],
-                                    Description = (string)elem["description"],
-                                    Annee = (string)elem["annee"],
-                                    Prix = (double)elem["prix"],
-                                });
-                            }
-                            DataTable dataTable = (DataTable)JsonConvert.DeserializeObject(j.ToString(), (typeof(DataTable)));
-                            Nom.DataSource = dataTable;
+                            
+                            var elements = JsonConvert.DeserializeObject<List<Articles>>(json);
+                            var bindingList = new BindingList<Articles>(elements);
+                            var source = new BindingSource(bindingList, null);
+                            dataGridView1.DataSource = source;
                         }
                     }
                 }

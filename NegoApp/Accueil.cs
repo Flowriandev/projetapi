@@ -17,6 +17,7 @@ namespace NegoApp
     {
 
         Stock stockForm = new Stock();
+        Articles articlesForm = new Articles();
         public Accueil()
         {
             InitializeComponent();
@@ -35,6 +36,11 @@ namespace NegoApp
         private void button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            articlesForm.Show();
         }
     }
 }
