@@ -29,34 +29,83 @@ namespace NegoApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dataGridFournisseur = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Adresse = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ville = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CodePostal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Pays = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridFournisseur)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dataGridFournisseur
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 33);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(776, 405);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridFournisseur.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridFournisseur.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.Nom,
+            this.Adresse,
+            this.Ville,
+            this.CodePostal,
+            this.Pays});
+            this.dataGridFournisseur.Location = new System.Drawing.Point(12, 33);
+            this.dataGridFournisseur.Name = "dataGridFournisseur";
+            this.dataGridFournisseur.RowTemplate.Height = 25;
+            this.dataGridFournisseur.Size = new System.Drawing.Size(776, 405);
+            this.dataGridFournisseur.TabIndex = 0;
+            // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            // 
+            // Nom
+            // 
+            this.Nom.HeaderText = "Nom";
+            this.Nom.Name = "Nom";
+            // 
+            // Adresse
+            // 
+            this.Adresse.HeaderText = "Adresse";
+            this.Adresse.Name = "Adresse";
+            // 
+            // Ville
+            // 
+            this.Ville.HeaderText = "Ville";
+            this.Ville.Name = "Ville";
+            // 
+            // CodePostal
+            // 
+            this.CodePostal.HeaderText = "CodePostal";
+            this.CodePostal.Name = "CodePostal";
+            // 
+            // Pays
+            // 
+            this.Pays.HeaderText = "Pays";
+            this.Pays.Name = "Pays";
             // 
             // Fournisseurs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridFournisseur);
             this.Name = "Fournisseurs";
             this.Text = "Fournisseurs";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridFournisseur)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridFournisseur;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nom;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Adresse;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ville;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CodePostal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Pays;
     }
 }
