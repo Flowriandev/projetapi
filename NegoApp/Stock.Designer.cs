@@ -33,15 +33,16 @@ namespace NegoApp
             this.btn_stock_list = new System.Windows.Forms.Button();
             this.pnl_btn = new System.Windows.Forms.Panel();
             this.pnl_stock_list = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.btn_back1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pnl_cmd = new System.Windows.Forms.Panel();
             this.btn_back = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pnl_btn.SuspendLayout();
             this.pnl_stock_list.SuspendLayout();
             this.pnl_cmd.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_stock_add
@@ -75,22 +76,13 @@ namespace NegoApp
             // 
             // pnl_stock_list
             // 
-            this.pnl_stock_list.Controls.Add(this.button1);
+            this.pnl_stock_list.Controls.Add(this.dataGridView1);
             this.pnl_stock_list.Controls.Add(this.btn_back1);
             this.pnl_stock_list.Controls.Add(this.label1);
             this.pnl_stock_list.Location = new System.Drawing.Point(0, 0);
             this.pnl_stock_list.Name = "pnl_stock_list";
             this.pnl_stock_list.Size = new System.Drawing.Size(788, 438);
             this.pnl_stock_list.TabIndex = 6;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(368, 29);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Get data";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // btn_back1
             // 
@@ -139,6 +131,15 @@ namespace NegoApp
             this.label2.TabIndex = 0;
             this.label2.Text = "Passer commande";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(82, 49);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(664, 360);
+            this.dataGridView1.TabIndex = 9;
+            // 
             // Stock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -155,6 +156,7 @@ namespace NegoApp
             this.pnl_stock_list.PerformLayout();
             this.pnl_cmd.ResumeLayout(false);
             this.pnl_cmd.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -170,6 +172,6 @@ namespace NegoApp
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btn_back;
         private System.Windows.Forms.Button btn_back1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
