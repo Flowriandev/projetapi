@@ -43,12 +43,14 @@ namespace NegoApp
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(237, 82);
+            this.button1.Location = new System.Drawing.Point(271, 109);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 49);
+            this.button1.Size = new System.Drawing.Size(136, 65);
             this.button1.TabIndex = 0;
             this.button1.Text = "Clients";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button3
             // 
@@ -88,18 +90,20 @@ namespace NegoApp
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(237, 193);
+            this.button2.Location = new System.Drawing.Point(271, 257);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(119, 49);
+            this.button2.Size = new System.Drawing.Size(136, 65);
             this.button2.TabIndex = 1;
             this.button2.Text = "Fournisseurs";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // btn_stock
             // 
-            this.btn_stock.Location = new System.Drawing.Point(474, 82);
+            this.btn_stock.Location = new System.Drawing.Point(542, 109);
+            this.btn_stock.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_stock.Name = "btn_stock";
-            this.btn_stock.Size = new System.Drawing.Size(119, 49);
+            this.btn_stock.Size = new System.Drawing.Size(136, 65);
             this.btn_stock.TabIndex = 2;
             this.btn_stock.Text = "Stock";
             this.btn_stock.UseVisualStyleBackColor = true;
@@ -107,42 +111,46 @@ namespace NegoApp
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(474, 193);
+            this.button8.Location = new System.Drawing.Point(542, 257);
+            this.button8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(119, 49);
+            this.button8.Size = new System.Drawing.Size(136, 65);
             this.button8.TabIndex = 3;
             this.button8.Text = "Inventaire";
             this.button8.UseVisualStyleBackColor = true;
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(237, 312);
+            this.button9.Location = new System.Drawing.Point(271, 416);
+            this.button9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(119, 49);
+            this.button9.Size = new System.Drawing.Size(136, 65);
             this.button9.TabIndex = 4;
             this.button9.Text = "Articles";
             this.button9.UseVisualStyleBackColor = true;
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(474, 312);
+            this.button10.Location = new System.Drawing.Point(542, 416);
+            this.button10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(119, 49);
+            this.button10.Size = new System.Drawing.Size(136, 65);
             this.button10.TabIndex = 5;
             this.button10.Text = "Commandes";
             this.button10.UseVisualStyleBackColor = true;
             // 
             // Accueil
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(911, 533);
+            this.ClientSize = new System.Drawing.Size(1041, 711);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.btn_stock);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Accueil";
             this.Text = "Accueil";
             this.ResumeLayout(false);

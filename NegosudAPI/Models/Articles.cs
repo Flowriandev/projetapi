@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace NegosudAPI.Models
+namespace NegosudAPI
 {
     public class Articles
     {
