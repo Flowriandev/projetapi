@@ -8,10 +8,13 @@ namespace NegoApp
 {
     class ArticleDto
     {
-        public long id { get; set; }
-        public long idProduit { get; set; }
-        public int quantite { get; set; }
-        public int quantiteCommande { get; set; }
+        public int id { get; set; }
+        public string nom { get; set; }
+        public string description { get; set; }
+        public string famille { get; set; }
+        public string annee { get; set; }
+        public int prix { get; set; }
+
     }
 
 
