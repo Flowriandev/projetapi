@@ -55,9 +55,9 @@ namespace NegoApp
             // 
             // BtnNvArt
             // 
-            this.BtnNvArt.Location = new System.Drawing.Point(1131, 300);
+            this.BtnNvArt.Location = new System.Drawing.Point(934, 396);
             this.BtnNvArt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.BtnNvArt.Name = "NvArticle";
+            this.BtnNvArt.Name = "BtnNvArt";
             this.BtnNvArt.Size = new System.Drawing.Size(122, 59);
             this.BtnNvArt.TabIndex = 1;
             this.BtnNvArt.Text = "Nouvel Article";
@@ -75,44 +75,44 @@ namespace NegoApp
             // 
             // nomTextBox
             // 
-            this.nomTextBox.Location = new System.Drawing.Point(791, 171);
+            this.nomTextBox.Location = new System.Drawing.Point(934, 170);
             this.nomTextBox.Name = "nomTextBox";
-            this.nomTextBox.Size = new System.Drawing.Size(125, 27);
+            this.nomTextBox.Size = new System.Drawing.Size(233, 27);
             this.nomTextBox.TabIndex = 3;
             // 
             // descriptionTextBox
             // 
-            this.descriptionTextBox.Location = new System.Drawing.Point(791, 220);
+            this.descriptionTextBox.Location = new System.Drawing.Point(934, 216);
             this.descriptionTextBox.Name = "descriptionTextBox";
-            this.descriptionTextBox.Size = new System.Drawing.Size(125, 27);
+            this.descriptionTextBox.Size = new System.Drawing.Size(233, 27);
             this.descriptionTextBox.TabIndex = 4;
             // 
             // FamilleTextBox
             // 
-            this.FamilleTextBox.Location = new System.Drawing.Point(791, 265);
+            this.FamilleTextBox.Location = new System.Drawing.Point(934, 265);
             this.FamilleTextBox.Name = "FamilleTextBox";
-            this.FamilleTextBox.Size = new System.Drawing.Size(125, 27);
+            this.FamilleTextBox.Size = new System.Drawing.Size(233, 27);
             this.FamilleTextBox.TabIndex = 5;
             // 
             // PrixTextBox
             // 
-            this.PrixTextBox.Location = new System.Drawing.Point(791, 354);
+            this.PrixTextBox.Location = new System.Drawing.Point(934, 362);
             this.PrixTextBox.Name = "PrixTextBox";
-            this.PrixTextBox.Size = new System.Drawing.Size(125, 27);
+            this.PrixTextBox.Size = new System.Drawing.Size(233, 27);
             this.PrixTextBox.TabIndex = 6;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(791, 316);
+            this.textBox1.Location = new System.Drawing.Point(934, 313);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 27);
+            this.textBox1.Size = new System.Drawing.Size(233, 27);
             this.textBox1.TabIndex = 7;
             // 
             // Articles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1886, 600);
+            this.ClientSize = new System.Drawing.Size(1924, 600);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.PrixTextBox);
             this.Controls.Add(this.FamilleTextBox);
