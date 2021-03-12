@@ -94,6 +94,7 @@ namespace NegoApp
             this.BtnFournisseurs.TabIndex = 1;
             this.BtnFournisseurs.Text = "Fournisseurs";
             this.BtnFournisseurs.UseVisualStyleBackColor = true;
+            this.BtnFournisseurs.Click += new System.EventHandler(this.BtnFournisseurs_Click);
             // 
             // BtnStock
             // 
