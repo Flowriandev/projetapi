@@ -33,16 +33,16 @@ namespace NegoApp
             this.btn_stock_list = new System.Windows.Forms.Button();
             this.pnl_btn = new System.Windows.Forms.Panel();
             this.pnl_stock_list = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btn_back1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pnl_cmd = new System.Windows.Forms.Panel();
             this.btn_back = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pnl_btn.SuspendLayout();
             this.pnl_stock_list.SuspendLayout();
-            this.pnl_cmd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.pnl_cmd.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_stock_add
@@ -83,6 +83,15 @@ namespace NegoApp
             this.pnl_stock_list.Name = "pnl_stock_list";
             this.pnl_stock_list.Size = new System.Drawing.Size(788, 438);
             this.pnl_stock_list.TabIndex = 6;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(82, 49);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(664, 360);
+            this.dataGridView1.TabIndex = 9;
             // 
             // btn_back1
             // 
@@ -131,15 +140,6 @@ namespace NegoApp
             this.label2.TabIndex = 0;
             this.label2.Text = "Passer commande";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(82, 49);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(664, 360);
-            this.dataGridView1.TabIndex = 9;
-            // 
             // Stock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -154,9 +154,9 @@ namespace NegoApp
             this.pnl_btn.ResumeLayout(false);
             this.pnl_stock_list.ResumeLayout(false);
             this.pnl_stock_list.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.pnl_cmd.ResumeLayout(false);
             this.pnl_cmd.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
