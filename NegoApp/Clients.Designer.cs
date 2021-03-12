@@ -29,43 +29,12 @@ namespace NegoApp
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Nouveau_client = new System.Windows.Forms.Button();
-            this.Modifier = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Prénom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Adresse = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Pays = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BackAccueil = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.BackAccueil)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Modifier,
-            this.ID,
-            this.Nom,
-            this.Prénom,
-            this.Adresse,
-            this.CP,
-            this.Tel,
-            this.dataGridViewTextBoxColumn1,
-            this.Pays});
-            this.dataGridView1.Location = new System.Drawing.Point(13, 13);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(607, 425);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Nouveau_client
             // 
@@ -76,96 +45,43 @@ namespace NegoApp
             this.Nouveau_client.Text = "Nouveau Client";
             this.Nouveau_client.UseVisualStyleBackColor = true;
             // 
-            // Modifier
-            // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Gray;
-            this.Modifier.DefaultCellStyle = dataGridViewCellStyle1;
-            this.Modifier.HeaderText = "";
-            this.Modifier.Name = "Modifier";
-            this.Modifier.Width = 20;
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            // 
-            // Nom
-            // 
-            this.Nom.HeaderText = "Nom";
-            this.Nom.Name = "Nom";
-            // 
-            // Prénom
-            // 
-            this.Prénom.HeaderText = "Prénom";
-            this.Prénom.Name = "Prénom";
-            // 
-            // Adresse
-            // 
-            this.Adresse.HeaderText = "Adresse";
-            this.Adresse.Name = "Adresse";
-            // 
-            // CP
-            // 
-            this.CP.HeaderText = "CP";
-            this.CP.Name = "CP";
-            // 
-            // Tel
-            // 
-            this.Tel.HeaderText = "Tel";
-            this.Tel.Name = "Tel";
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Code Postal";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // Pays
-            // 
-            this.Pays.HeaderText = "Pays";
-            this.Pays.Name = "Pays";
-            // 
             // BackAccueil
             // 
-            this.BackAccueil.Image = global::NegoApp.Properties.Resources.home_large;
             this.BackAccueil.Location = new System.Drawing.Point(668, 31);
             this.BackAccueil.Name = "BackAccueil";
             this.BackAccueil.Size = new System.Drawing.Size(49, 53);
             this.BackAccueil.TabIndex = 2;
             this.BackAccueil.TabStop = false;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(620, 426);
+            this.dataGridView1.TabIndex = 3;
+            // 
             // Clients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.BackAccueil);
             this.Controls.Add(this.Nouveau_client);
-            this.Controls.Add(this.dataGridView1);
             this.Name = "Clients";
             this.Text = "Clients";
             this.Load += new System.EventHandler(this.Clients_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BackAccueil)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button Nouveau_client;
-        private System.Windows.Forms.DataGridViewButtonColumn Modifier;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nom;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Prénom;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Adresse;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Tel;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Pays;
         private System.Windows.Forms.PictureBox BackAccueil;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

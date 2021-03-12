@@ -19,7 +19,6 @@ namespace NegoApp
     public partial class Articles : Form
     {
 
-        private HttpWebRequest webRequest;
         public Articles()
         {
             InitializeComponent();

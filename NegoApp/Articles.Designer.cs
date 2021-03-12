@@ -30,7 +30,7 @@ namespace NegoApp
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.NvArticle = new System.Windows.Forms.Button();
+            this.BtnNvArt = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.nomTextBox = new System.Windows.Forms.TextBox();
             this.descriptionTextBox = new System.Windows.Forms.TextBox();
@@ -53,7 +53,7 @@ namespace NegoApp
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // NvArticle
+            // BtnNvArt
             // 
             this.NvArticle.Location = new System.Drawing.Point(1131, 300);
             this.NvArticle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -119,7 +119,7 @@ namespace NegoApp
             this.Controls.Add(this.descriptionTextBox);
             this.Controls.Add(this.nomTextBox);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.NvArticle);
+            this.Controls.Add(this.BtnNvArt);
             this.Controls.Add(this.dataGridView1);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Articles";
@@ -135,7 +135,7 @@ namespace NegoApp
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button NvArticle;
+        private System.Windows.Forms.Button BtnNvArt;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox nomTextBox;
         private System.Windows.Forms.TextBox descriptionTextBox;
