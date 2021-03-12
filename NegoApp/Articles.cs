@@ -52,9 +52,37 @@ namespace NegoApp
           
         }
 
-        private void NvArticle_Click(object sender, EventArgs e)
+
+
+        public string JsonAjoutArticle()
         {
-            string url = "http://localhost:44384/api/Articles/";
+
+
+            ArticleDto jsonData = new ArticleDto()
+            {
+                id = 0,
+                annee = anneeTextBox.Text,
+                description = descriptionTextBox.Text,
+                prix = Convert.ToInt32(PrixTextBox.Text),
+                famille = FamilleTextBox.Text,
+                nom = nomTextBox.Text,
+            };
+      
+            return JsonConvert.SerializeObject(jsonData, Formatting.Indented);
+        }
+        private void Articles_Load(object sender, EventArgs e)
+        {
+            GetData();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnNvArt_Click(object sender, EventArgs e)
+        {
+            string url = "https://localhost:44384/api/Articles";
             string requestParams = JsonAjoutArticle();
 
             webRequest = (HttpWebRequest)WebRequest.Create(url);
@@ -67,26 +95,6 @@ namespace NegoApp
             {
                 requestStream.Write(byteArray, 0, byteArray.Length);
             }
-        }
-
-        public string JsonAjoutArticle()
-        {
-
-
-            var jsonData = new ArticleDto()
-            {
-                annee = textBox1.Text,
-                description = descriptionTextBox.Text,
-                prix = Convert.ToInt32(PrixTextBox.Text),
-                famille = FamilleTextBox.Text,
-                nom = nomTextBox.Text,
-            };
-
-            return JsonConvert.SerializeObject(jsonData, Formatting.Indented);
-        }
-        private void Articles_Load(object sender, EventArgs e)
-        {
-            GetData();
         }
     }
 }

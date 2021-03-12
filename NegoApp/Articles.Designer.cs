@@ -36,7 +36,12 @@ namespace NegoApp
             this.descriptionTextBox = new System.Windows.Forms.TextBox();
             this.FamilleTextBox = new System.Windows.Forms.TextBox();
             this.PrixTextBox = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.anneeTextBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.Année = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -55,14 +60,14 @@ namespace NegoApp
             // 
             // BtnNvArt
             // 
-            this.BtnNvArt.Location = new System.Drawing.Point(934, 396);
+            this.BtnNvArt.Location = new System.Drawing.Point(987, 423);
             this.BtnNvArt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BtnNvArt.Name = "BtnNvArt";
             this.BtnNvArt.Size = new System.Drawing.Size(122, 59);
             this.BtnNvArt.TabIndex = 1;
             this.BtnNvArt.Text = "Nouvel Article";
             this.BtnNvArt.UseVisualStyleBackColor = true;
-            this.BtnNvArt.Click += new System.EventHandler(this.NvArticle_Click);
+            this.BtnNvArt.Click += new System.EventHandler(this.BtnNvArt_Click);
             // 
             // pictureBox1
             // 
@@ -101,19 +106,70 @@ namespace NegoApp
             this.PrixTextBox.Size = new System.Drawing.Size(233, 27);
             this.PrixTextBox.TabIndex = 6;
             // 
-            // textBox1
+            // anneeTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(934, 313);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(233, 27);
-            this.textBox1.TabIndex = 7;
+            this.anneeTextBox.Location = new System.Drawing.Point(934, 313);
+            this.anneeTextBox.Name = "anneeTextBox";
+            this.anneeTextBox.Size = new System.Drawing.Size(233, 27);
+            this.anneeTextBox.TabIndex = 7;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(791, 171);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(42, 20);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Nom";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(791, 217);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(85, 20);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Description";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(791, 266);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(56, 20);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Famille";
+            // 
+            // Année
+            // 
+            this.Année.AutoSize = true;
+            this.Année.Location = new System.Drawing.Point(791, 314);
+            this.Année.Name = "Année";
+            this.Année.Size = new System.Drawing.Size(51, 20);
+            this.Année.TabIndex = 11;
+            this.Année.Text = "Année";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(791, 363);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(33, 20);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Prix";
             // 
             // Articles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 600);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.Année);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.anneeTextBox);
             this.Controls.Add(this.PrixTextBox);
             this.Controls.Add(this.FamilleTextBox);
             this.Controls.Add(this.descriptionTextBox);
@@ -142,6 +198,11 @@ namespace NegoApp
         private System.Windows.Forms.TextBox textBox;
         private System.Windows.Forms.TextBox FamilleTextBox;
         private System.Windows.Forms.TextBox PrixTextBox;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox anneeTextBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label Année;
+        private System.Windows.Forms.Label label5;
     }
 }
