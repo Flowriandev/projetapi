@@ -29,28 +29,26 @@ namespace NegoApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnClient = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btn_stock = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.BtnFournisseurs = new System.Windows.Forms.Button();
+            this.BtnStock = new System.Windows.Forms.Button();
+            this.BtnInventaire = new System.Windows.Forms.Button();
+            this.BtnArticles = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // BtnClient
             // 
-            this.button1.Location = new System.Drawing.Point(271, 109);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 65);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Clients";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BtnClient.Location = new System.Drawing.Point(237, 82);
+            this.BtnClient.Name = "BtnClient";
+            this.BtnClient.Size = new System.Drawing.Size(119, 49);
+            this.BtnClient.TabIndex = 0;
+            this.BtnClient.Text = "Clients";
+            this.BtnClient.UseVisualStyleBackColor = true;
+            this.BtnClient.Click += new System.EventHandler(this.button1_Click);
             // 
             // button3
             // 
@@ -88,70 +86,54 @@ namespace NegoApp
             this.button6.Text = "button6";
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // BtnFournisseurs
             // 
-            this.button2.Location = new System.Drawing.Point(271, 257);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(136, 65);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Fournisseurs";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtnFournisseurs.Location = new System.Drawing.Point(237, 193);
+            this.BtnFournisseurs.Name = "BtnFournisseurs";
+            this.BtnFournisseurs.Size = new System.Drawing.Size(119, 49);
+            this.BtnFournisseurs.TabIndex = 1;
+            this.BtnFournisseurs.Text = "Fournisseurs";
+            this.BtnFournisseurs.UseVisualStyleBackColor = true;
             // 
-            // btn_stock
+            // BtnStock
             // 
-            this.btn_stock.Location = new System.Drawing.Point(542, 109);
-            this.btn_stock.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_stock.Name = "btn_stock";
-            this.btn_stock.Size = new System.Drawing.Size(136, 65);
-            this.btn_stock.TabIndex = 2;
-            this.btn_stock.Text = "Stock";
-            this.btn_stock.UseVisualStyleBackColor = true;
-            this.btn_stock.Click += new System.EventHandler(this.btn_stock_Click);
+            this.BtnStock.Location = new System.Drawing.Point(474, 82);
+            this.BtnStock.Name = "BtnStock";
+            this.BtnStock.Size = new System.Drawing.Size(119, 49);
+            this.BtnStock.TabIndex = 2;
+            this.BtnStock.Text = "Stock";
+            this.BtnStock.UseVisualStyleBackColor = true;
+            this.BtnStock.Click += new System.EventHandler(this.btn_stock_Click);
             // 
-            // button8
+            // BtnInventaire
             // 
-            this.button8.Location = new System.Drawing.Point(542, 257);
-            this.button8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(136, 65);
-            this.button8.TabIndex = 3;
-            this.button8.Text = "Inventaire";
-            this.button8.UseVisualStyleBackColor = true;
+            this.BtnInventaire.Location = new System.Drawing.Point(474, 193);
+            this.BtnInventaire.Name = "BtnInventaire";
+            this.BtnInventaire.Size = new System.Drawing.Size(119, 49);
+            this.BtnInventaire.TabIndex = 3;
+            this.BtnInventaire.Text = "Inventaire";
+            this.BtnInventaire.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // BtnArticles
             // 
-            this.button9.Location = new System.Drawing.Point(271, 416);
-            this.button9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(136, 65);
-            this.button9.TabIndex = 4;
-            this.button9.Text = "Articles";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(542, 416);
-            this.button10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(136, 65);
-            this.button10.TabIndex = 5;
-            this.button10.Text = "Commandes";
-            this.button10.UseVisualStyleBackColor = true;
+            this.BtnArticles.Location = new System.Drawing.Point(237, 312);
+            this.BtnArticles.Name = "BtnArticles";
+            this.BtnArticles.Size = new System.Drawing.Size(119, 49);
+            this.BtnArticles.TabIndex = 4;
+            this.BtnArticles.Text = "Articles";
+            this.BtnArticles.UseVisualStyleBackColor = true;
+            this.BtnArticles.Click += new System.EventHandler(this.button9_Click);
             // 
             // Accueil
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1041, 711);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.btn_stock);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ClientSize = new System.Drawing.Size(911, 533);
+            this.Controls.Add(this.BtnArticles);
+            this.Controls.Add(this.BtnInventaire);
+            this.Controls.Add(this.BtnStock);
+            this.Controls.Add(this.BtnFournisseurs);
+            this.Controls.Add(this.BtnClient);
             this.Name = "Accueil";
             this.Text = "Accueil";
             this.ResumeLayout(false);
@@ -160,16 +142,15 @@ namespace NegoApp
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnClient;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btn_stock;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button BtnFournisseurs;
+        private System.Windows.Forms.Button BtnStock;
+        private System.Windows.Forms.Button BtnInventaire;
+        private System.Windows.Forms.Button BtnArticles;
     }
 }
 
