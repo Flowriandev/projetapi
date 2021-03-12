@@ -12,6 +12,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Net;
 using System.IO;
+using System.Web;
 
 namespace NegoApp
 {
@@ -53,9 +54,38 @@ namespace NegoApp
 
         private void NvArticle_Click(object sender, EventArgs e)
         {
-            GetData();
+            string url = "http://localhost:58841/api/Fournisseurs/";
+            string requestParams = JsonAjoutArticle();
+
+            webRequest = (HttpWebRequest)WebRequest.Create(url);
+            webRequest.Method = "POST";
+            webRequest.ContentType = "application/json";
+
+            byte[] byteArray = Encoding.UTF8.GetBytes(requestParams);
+            webRequest.ContentLength = byteArray.Length;
+            using (Stream requestStream = webRequest.GetRequestStream())
+            {
+                requestStream.Write(byteArray, 0, byteArray.Length);
+            }
         }
 
+        public string JsonAjoutArticle()
+        {
+            JavaScriptSerializer ser = new JavaScriptSerializer();
+
+            var jsonData = new ArticleDto()
+            {
+                
+                annee = textBox1.Text,
+                description = descriptionTextBox.Text,
+                prix = Convert.ToInt32(PrixTextBox.Text),
+                famille = FamilleTextBox.Text,
+                nom = nomTextBox.Text,
+            };
+
+            var result = ser.Serialize(jsonData);
+            return result;
+        }
         private void Articles_Load(object sender, EventArgs e)
         {
             GetData();
