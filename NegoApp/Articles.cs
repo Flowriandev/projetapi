@@ -50,6 +50,7 @@ namespace NegoApp
             }
           
         }
+        
 
         private void NvArticle_Click(object sender, EventArgs e)
         {
