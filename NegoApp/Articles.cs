@@ -56,9 +56,7 @@ namespace NegoApp
 
         public string JsonAjoutArticle()
         {
-
-
-            ArticleDto jsonData = new ArticleDto()
+            var jsonData = new ArticleDto()
             {
                 id = 0,
                 annee = anneeTextBox.Text,

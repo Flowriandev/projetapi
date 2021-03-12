@@ -34,7 +34,7 @@ namespace NegoApp
                 var datalist = new BindingList<FournisseurDto>(j);
                 var data = new BindingSource(datalist, null);
 
-                dataGridView1.DataSource = data;
+                dataGridFournisseur.DataSource = data;
             }
             else
             {
