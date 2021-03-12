@@ -10,11 +10,15 @@ using System.Windows.Forms;
 using System.Net.Http;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Net;
+using System.IO;
 
 namespace NegoApp
 {
     public partial class Articles : Form
     {
+
+        private HttpWebRequest webRequest;
         public Articles()
         {
             InitializeComponent();
@@ -24,36 +28,35 @@ namespace NegoApp
         {
 
         }
-        public async void GetData()
+        public void GetData()
         {
             string baseUrl = "https://localhost:44384/api/Articles";
-            try
+            var webRequest = (HttpWebRequest)WebRequest.Create(baseUrl);
+            var webResponse = (HttpWebResponse)webRequest.GetResponse();
+
+            if ((webResponse.StatusCode == HttpStatusCode.OK))
             {
-                using (HttpClient client = new HttpClient())
-                {
-                    using (HttpResponseMessage res = await client.GetAsync(baseUrl))
-                    {
-                        using (HttpContent content = res.Content)
-                        {
-                            String json = await content.ReadAsStringAsync();
-                            JArray j = JArray.Parse(json);
-                            
-                            var elements = JsonConvert.DeserializeObject<List<Articles>>(json);
-                            var bindingList = new BindingList<Articles>(elements);
-                            var source = new BindingSource(bindingList, null);
-                            dataGridView1.DataSource = source;
-                        }
-                    }
-                }
+                var reader = new StreamReader(webResponse.GetResponseStream());
+                string s = reader.ReadToEnd();
+                var j = JsonConvert.DeserializeObject<List<ArticleDto>>(s);
+                var datalist = new BindingList<ArticleDto>(j);
+                var data = new BindingSource(datalist, null);
+
+                dataGridView1.DataSource = data;
             }
-            catch (Exception exception)
+            else
             {
-                Console.WriteLine("Exception");
-                Console.WriteLine(exception);
+                MessageBox.Show(string.Format("Status code == {0}", webResponse.StatusCode));
             }
+          
         }
 
         private void NvArticle_Click(object sender, EventArgs e)
+        {
+            GetData();
+        }
+
+        private void Articles_Load(object sender, EventArgs e)
         {
             GetData();
         }

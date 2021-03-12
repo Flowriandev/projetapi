@@ -30,14 +30,14 @@ namespace NegoApp
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.NvArticle = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Modifier = new System.Windows.Forms.DataGridViewButtonColumn();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Année = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Prix = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NvArticle = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -60,26 +60,6 @@ namespace NegoApp
             this.dataGridView1.Size = new System.Drawing.Size(714, 567);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // NvArticle
-            // 
-            this.NvArticle.Location = new System.Drawing.Point(760, 281);
-            this.NvArticle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.NvArticle.Name = "NvArticle";
-            this.NvArticle.Size = new System.Drawing.Size(122, 59);
-            this.NvArticle.TabIndex = 1;
-            this.NvArticle.Text = "Nouvel Article";
-            this.NvArticle.UseVisualStyleBackColor = true;
-            this.NvArticle.Click += new System.EventHandler(this.NvArticle_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(791, 52);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(56, 72);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
             // 
             // Modifier
             // 
@@ -123,6 +103,26 @@ namespace NegoApp
             this.Prix.Name = "Prix";
             this.Prix.Width = 125;
             // 
+            // NvArticle
+            // 
+            this.NvArticle.Location = new System.Drawing.Point(760, 281);
+            this.NvArticle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.NvArticle.Name = "NvArticle";
+            this.NvArticle.Size = new System.Drawing.Size(122, 59);
+            this.NvArticle.TabIndex = 1;
+            this.NvArticle.Text = "Nouvel Article";
+            this.NvArticle.UseVisualStyleBackColor = true;
+            this.NvArticle.Click += new System.EventHandler(this.NvArticle_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(791, 52);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(56, 72);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // Articles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -134,6 +134,7 @@ namespace NegoApp
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Articles";
             this.Text = "Articles";
+            this.Load += new System.EventHandler(this.Articles_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
