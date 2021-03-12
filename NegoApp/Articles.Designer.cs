@@ -55,14 +55,14 @@ namespace NegoApp
             // 
             // BtnNvArt
             // 
-            this.NvArticle.Location = new System.Drawing.Point(1131, 300);
-            this.NvArticle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.NvArticle.Name = "NvArticle";
-            this.NvArticle.Size = new System.Drawing.Size(122, 59);
-            this.NvArticle.TabIndex = 1;
-            this.NvArticle.Text = "Nouvel Article";
-            this.NvArticle.UseVisualStyleBackColor = true;
-            this.NvArticle.Click += new System.EventHandler(this.NvArticle_Click);
+            this.BtnNvArt.Location = new System.Drawing.Point(1131, 300);
+            this.BtnNvArt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnNvArt.Name = "NvArticle";
+            this.BtnNvArt.Size = new System.Drawing.Size(122, 59);
+            this.BtnNvArt.TabIndex = 1;
+            this.BtnNvArt.Text = "Nouvel Article";
+            this.BtnNvArt.UseVisualStyleBackColor = true;
+            this.BtnNvArt.Click += new System.EventHandler(this.NvArticle_Click);
             // 
             // pictureBox1
             // 
